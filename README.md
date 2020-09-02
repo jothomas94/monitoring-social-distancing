@@ -14,7 +14,7 @@ guideline using Deep Learning models and Visual Computing.**
 
 **Steps for basic detection:**
 
-Yolo weights are not uploadedin repo. Run the get-weights.sh script for the first time.
+Yolo weights are not uploaded in the repo. Please download weights by running the get_weights.sh script for the first time.
 
 python yolo.py
 
