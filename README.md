@@ -24,7 +24,7 @@ python yolo.py -i '/path/to/image/'
 
 python yolo.py -v '/path/to/video/'
 
-A sample image and video uploaded in repository. Projective Transformations cordinates are calibrated based on the sample images and videos.
+A sample image and video uploaded in repository. Projective Transformations cordinates are calibrated based on the dimensions of sample image and video.
 
 
 
