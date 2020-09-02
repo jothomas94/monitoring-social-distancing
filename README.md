@@ -1,4 +1,4 @@
-# Social Distancing Detector
+# Monitoring Social Distancing
 
 **This project focuses on creating a solution to monitor whether individuals adhere to this social distancing
 guideline using Deep Learning models and Visual Computing.**
