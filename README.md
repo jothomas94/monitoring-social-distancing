@@ -21,7 +21,7 @@ areas of Deep learning detection methods and geometry in Computer Vision.
 * Euclediean Distance Calculations: Projective Transformation in openCV
 * Visual representation for Violations: Scatter plots, Real-time violation graph, Change in  bounding box colour
 
-##Steps for execution
+## Steps for execution
 
 ***Pre-Requsites:***
   Yolo weights are not uploaded in the repo. Please download weights by running the get_weights.sh script for the first time.
