@@ -1,4 +1,4 @@
-# Monitoring Social Distancing
+ # Monitoring Social Distancing
 
 This project focuses on creating a solution to monitor whether individuals adhere to this social distancing
 guideline using Deep Learning models and Visual Computing. During the 2020 pandemic one effective guideline put forward by
@@ -33,13 +33,13 @@ areas of Deep learning detection methods and geometry in Computer Vision.
 
   A sample image and video uploaded in repository. Projective Transformations cordinates are calibrated based on the dimensions of sample image and video.
 
-##Results
+## Results
 
 Snapshots of results from sample videos and thier corresponding scatter plots in pixel axis. Violations are highlighted in red.
 
 ![image](https://github.com/user-attachments/assets/bcc41287-5fa1-4819-b027-7e6d2e1272c4)
 
-##Evaluation of Model
+## Evaluation of Model
 
 The accuracy in distance measurement is evaluated by comparing the software calculated distance with the real-life distance. Due to the limitations in setting up a test setup with people standing in known distances, the model was tested using images available online. The photo used was captured in Manchester Piccadilly station in April 2020, where a grid of floor stickers are placed to help people follow the social distancing. As mentioned in the article the stickers are kept at 2 meters apart, so it will be fair to assume the measurements are accurate. It can be observed in the figure that a group of train crew and station staff are standing on those stickers maintaining the 2-meter distance. Thus, these distances were measured through the model and the consistency in the values were evaluated.
 
@@ -50,7 +50,7 @@ Among these boxes, both horizontally and vertically, there are twenty-four 2m me
 The model accurately measures when the subjects are closer to the camera and the error in measurements becomes evident when its farther from the field of view.
 
 
-##Limitations
+## Limitations
 
 * Limited field of view: The detection and distance calculation results at the far end of the camera view were prone to more errors than the near end. Smaller subject size made it difficult for the model to identify them. A possible recovery step would be to use multiple cameras to cover the area we interested. If the software is ported to an embedded solution, placing one or two of such setups in the region of choice would help to assess the violations more accurately.
 * Occlusion Handling: Though the model was able to perform with a fair detection accuracy, few false positives were observed for occluded persons in a frame. Few noted cases happened when the body of individuals overlap in a scene they were detected as one bounding box as shown in figure 20. Occasionally some errors were observed when vertical structures like traffic lights or trees appear closer to a person false positive were predicted. An example of oclusion seen:
@@ -58,6 +58,6 @@ The model accurately measures when the subjects are closer to the camera and the
 ![image](https://github.com/user-attachments/assets/93ae1f12-acbb-43a9-8454-d1292b2c6b87)
 
 
-##Conlusions
+## Conlusions
 
 A solution to monitor social distancing using surveillance videos was developed during this project. Different surveys and literatures on object detection using DNN was analysed to find a suitable method for person detection. The proposed solution is an algorithm that combines detection through YOLOv3 and projective techniques in geometry to predict the violations in social distancing. This potable software could be deployed in an embedded platform or existing surveillance solutions. The performance of the system in both detection and distance measurement were evaluated separately and the results were discussed. Using more advanced version YOLO would definitely improve the limitations discussed and improve the accuracy of the system. 
